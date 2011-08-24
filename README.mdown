@@ -1,0 +1,103 @@
+# Quotes
+
+A simple and lightweight wrapper for the Yahoo stock quotes API.
+
+## Installation
+
+	[sudo] gem install quotes
+
+## Usage
+
+	quotes = Quotes.get("AAPL", "GOOG", "MSFT")
+	quotes["AAPL"].ask			# => AAPL ask price
+	quotes["AAPL"].bid			# => AAPL bid price
+	quotes["GOOG"].volume		# => GOOG volume
+	quotes["GOOG"].dayslow 		# => GOOG day's low
+	quotes["MSFT"].dayshigh 	# => MSFT day's high
+	quotes["MSFT"].open 		# => MSFT opening price
+	
+
+#### List of quote qualities
+
+    afterhourschangerealtime
+	annualizedgain
+	ask
+	askrealtime
+	averagedailyvolume
+	bid
+	bidrealtime
+	bookvalue
+	change
+	change_percentchange
+	changefromfiftydaymovingaverage
+	changefromtwohundreddaymovingaverage
+	changefromyearhigh
+	changefromyearlow
+	changeinpercent
+	changepercentrealtime
+	changerealtime
+	commission
+	dayshigh
+	dayslow
+	daysrange
+	daysrangerealtime
+	daysvaluechange
+	daysvaluechangerealtime
+	dividendpaydate
+	dividendshare
+	dividendyield
+	earningsshare
+	ebitda
+	epsestimatecurrentyear
+	epsestimatenextquarter
+	epsestimatenextyear
+	errorindicationreturnedforsymbolchangedinvalid
+	exdividenddate
+	fiftydaymovingaverage
+	highlimit
+	holdingsgain
+	holdingsgainpercent
+	holdingsgainpercentrealtime
+	holdingsgainrealtime
+	holdingsvalue
+	holdingsvaluerealtime
+	lasttradedate
+	lasttradepriceonly
+	lasttraderealtimewithtime
+	lasttradetime
+	lasttradewithtime
+	lowlimit
+	marketcapitalization
+	marketcaprealtime
+	moreinfo
+	name
+	notes
+	oneyrtargetprice
+	open
+	orderbookrealtime
+	pegratio
+	peratio
+	peratiorealtime
+	percebtchangefromyearhigh
+	percentchange
+	percentchangefromfiftydaymovingaverage
+	percentchangefromtwohundreddaymovingaverage
+	percentchangefromyearlow
+	previousclose
+	pricebook
+	priceepsestimatecurrentyear
+	priceepsestimatenextyear
+	pricepaid
+	pricesales
+	sharesowned
+	shortratio
+	stockexchange
+	symbol
+	symbol
+	tickertrend
+	tradedate
+	twohundreddaymovingaverage
+	volume
+	yearhigh
+	yearlow
+	yearrange
